@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0851BB86C944497947DA8AC8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAE95E762318B70FBC43025 /* Cocoa.framework */; };
+		0C7B0EC08E6D7926EF9A2D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B389F504450CA578A70EC76 /* AppDelegate.swift */; };
+		2630E5ACA11B763AB2ABD725 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264D7D85125D99D1754BA47 /* KeychainStore.swift */; };
+		2A98B795E9B1A46F4916E83C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981A4A4756603C3DB03C175 /* AppState.swift */; };
+		4E441D6E5E5743B358971C8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1163EE988FFE03B449CB76 /* ContentView.swift */; };
+		69E7B6C826BC168BAE16DE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B116823AB59E6E2037E95BE /* Assets.xcassets */; };
+		7BED3365302066BE8AFC12B6 /* UNASLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A412D6C2859C297C863734 /* UNASLinkApp.swift */; };
+		83524606724E42B9AE59BE0C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAE95E762318B70FBC43025 /* Cocoa.framework */; };
+		8D7D2005AB20BFF8A9F1E293 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692687A6E9CD5005783161AF /* Constants.swift */; };
+		90C0E8039C1404BAC2CA161E /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F7670A5BABE6DD2F935E8B /* LoginWebView.swift */; };
+		9F1C9FBE805CC9FA0BBEAE5F /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833A839262D9A3C29E6D28D /* FinderSync.swift */; };
+		D05ED65D626380205DE92FA8 /* JWTClaims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59673AAD45A53128E88F3087 /* JWTClaims.swift */; };
+		D815D538BCFC257CD3C0E1B6 /* UNASLinkFinderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08F6EB8A3BD735FA92F90BB2 /* UNASLinkFinderExtension.appex */; };
+		DDF421C660419C572AA841BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692687A6E9CD5005783161AF /* Constants.swift */; };
+		F273CD072C92BABDA7FD9E60 /* UNASAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E483AE84774BF66CE8EF86 /* UNASAPIClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B494B278392FBAF411D91D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ECCCDEDFCE01E28E3E61A16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00953596B829F812A881322A;
+			remoteInfo = UNASLinkFinderExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA178685A1D2632B7EB17626 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D815D538BCFC257CD3C0E1B6 /* UNASLinkFinderExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08F6EB8A3BD735FA92F90BB2 /* UNASLinkFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UNASLinkFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A94D7DB4270E92547802BBF /* UNASLinkFinderExtension.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = UNASLinkFinderExtension.entitlements; sourceTree = "<group>"; };
+		1833A839262D9A3C29E6D28D /* FinderSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		19F7670A5BABE6DD2F935E8B /* LoginWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
+		3B116823AB59E6E2037E95BE /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59673AAD45A53128E88F3087 /* JWTClaims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JWTClaims.swift; sourceTree = "<group>"; };
+		5B27A2B4122D7B7A4FF363E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6264D7D85125D99D1754BA47 /* KeychainStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		692687A6E9CD5005783161AF /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		73AB64426C7FEF33E3E663FE /* UNASLink.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = UNASLink.entitlements; sourceTree = "<group>"; };
+		7981A4A4756603C3DB03C175 /* AppState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		79E483AE84774BF66CE8EF86 /* UNASAPIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UNASAPIClient.swift; sourceTree = "<group>"; };
+		7DAE95E762318B70FBC43025 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		8953ED35D7E54FC85F9771EA /* UNASLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UNASLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B389F504450CA578A70EC76 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C1163EE988FFE03B449CB76 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D0C8265E92462F84363F40A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A412D6C2859C297C863734 /* UNASLinkApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UNASLinkApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77EB89177D70D34961121DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0851BB86C944497947DA8AC8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC6966A7C00ACE9493CE41B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83524606724E42B9AE59BE0C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09A1D68B71F3008035FEA4C5 /* UNASLinkFinderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1833A839262D9A3C29E6D28D /* FinderSync.swift */,
+				9D0C8265E92462F84363F40A /* Info.plist */,
+				0A94D7DB4270E92547802BBF /* UNASLinkFinderExtension.entitlements */,
+			);
+			name = UNASLinkFinderExtension;
+			path = UNASLinkFinderExtension;
+			sourceTree = "<group>";
+		};
+		4D9441A208B94163C12FDD1E = {
+			isa = PBXGroup;
+			children = (
+				AE80FCD073A3A93A1007187D /* Products */,
+				D74315349416D28D0B5934B6 /* Frameworks */,
+				A6E104F5115357C2FA1E9AB7 /* UNASLinkApp */,
+				09A1D68B71F3008035FEA4C5 /* UNASLinkFinderExtension */,
+				FB9D18B514906AE7861D8705 /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		A6E104F5115357C2FA1E9AB7 /* UNASLinkApp */ = {
+			isa = PBXGroup;
+			children = (
+				F1A412D6C2859C297C863734 /* UNASLinkApp.swift */,
+				8B389F504450CA578A70EC76 /* AppDelegate.swift */,
+				7981A4A4756603C3DB03C175 /* AppState.swift */,
+				9C1163EE988FFE03B449CB76 /* ContentView.swift */,
+				19F7670A5BABE6DD2F935E8B /* LoginWebView.swift */,
+				6264D7D85125D99D1754BA47 /* KeychainStore.swift */,
+				59673AAD45A53128E88F3087 /* JWTClaims.swift */,
+				79E483AE84774BF66CE8EF86 /* UNASAPIClient.swift */,
+				5B27A2B4122D7B7A4FF363E5 /* Info.plist */,
+				73AB64426C7FEF33E3E663FE /* UNASLink.entitlements */,
+				3B116823AB59E6E2037E95BE /* Assets.xcassets */,
+			);
+			name = UNASLinkApp;
+			path = UNASLinkApp;
+			sourceTree = "<group>";
+		};
+		AE80FCD073A3A93A1007187D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8953ED35D7E54FC85F9771EA /* UNASLink.app */,
+				08F6EB8A3BD735FA92F90BB2 /* UNASLinkFinderExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C095C0EB919091C9319742BE /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				7DAE95E762318B70FBC43025 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		D74315349416D28D0B5934B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C095C0EB919091C9319742BE /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB9D18B514906AE7861D8705 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				692687A6E9CD5005783161AF /* Constants.swift */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00953596B829F812A881322A /* UNASLinkFinderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16886E69A7DB5A50778E720A /* Build configuration list for PBXNativeTarget "UNASLinkFinderExtension" */;
+			buildPhases = (
+				82A7EEC086B7675472D40463 /* Sources */,
+				9AC6966A7C00ACE9493CE41B /* Frameworks */,
+				71E239B48DCD8CAAA4E395C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UNASLinkFinderExtension;
+			productName = UNASLinkFinderExtension;
+			productReference = 08F6EB8A3BD735FA92F90BB2 /* UNASLinkFinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8A7DC4EC299087A3D260E34F /* UNASLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03567BA25E4BC9DFB08C5A52 /* Build configuration list for PBXNativeTarget "UNASLink" */;
+			buildPhases = (
+				3064A8D80095D818CD95A0C6 /* Sources */,
+				77EB89177D70D34961121DAC /* Frameworks */,
+				2179F3E0962D58BD0CA50ACC /* Resources */,
+				EA178685A1D2632B7EB17626 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4074A7A50E03BBB39C8A771E /* PBXTargetDependency */,
+			);
+			name = UNASLink;
+			productName = UNASLink;
+			productReference = 8953ED35D7E54FC85F9771EA /* UNASLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6ECCCDEDFCE01E28E3E61A16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+			};
+			buildConfigurationList = 3BEB41F8CA666341A8CB5CF9 /* Build configuration list for PBXProject "UNASLink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D9441A208B94163C12FDD1E;
+			productRefGroup = AE80FCD073A3A93A1007187D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A7DC4EC299087A3D260E34F /* UNASLink */,
+				00953596B829F812A881322A /* UNASLinkFinderExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2179F3E0962D58BD0CA50ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E7B6C826BC168BAE16DE56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E239B48DCD8CAAA4E395C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3064A8D80095D818CD95A0C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BED3365302066BE8AFC12B6 /* UNASLinkApp.swift in Sources */,
+				0C7B0EC08E6D7926EF9A2D2E /* AppDelegate.swift in Sources */,
+				2A98B795E9B1A46F4916E83C /* AppState.swift in Sources */,
+				4E441D6E5E5743B358971C8E /* ContentView.swift in Sources */,
+				90C0E8039C1404BAC2CA161E /* LoginWebView.swift in Sources */,
+				2630E5ACA11B763AB2ABD725 /* KeychainStore.swift in Sources */,
+				D05ED65D626380205DE92FA8 /* JWTClaims.swift in Sources */,
+				F273CD072C92BABDA7FD9E60 /* UNASAPIClient.swift in Sources */,
+				DDF421C660419C572AA841BC /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82A7EEC086B7675472D40463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1C9FBE805CC9FA0BBEAE5F /* FinderSync.swift in Sources */,
+				8D7D2005AB20BFF8A9F1E293 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4074A7A50E03BBB39C8A771E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UNASLinkFinderExtension;
+			target = 00953596B829F812A881322A /* UNASLinkFinderExtension */;
+			targetProxy = 6B494B278392FBAF411D91D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05BD323D9B122D178FD0130E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = UNASLinkFinderExtension/UNASLinkFinderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UNASLinkFinderExtension/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UNASLink.FinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		236A8237E1C5A2FE127E788F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UNASLinkApp/UNASLink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UNASLinkApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UNASLink;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8D1BBBD660F33BA2EACC843E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		91C6275164F63D3813EA1CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = UNASLinkFinderExtension/UNASLinkFinderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UNASLinkFinderExtension/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UNASLink.FinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		99E7A9181D4B9916A14A1296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BD81C130768B0056DC19DF02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UNASLinkApp/UNASLink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UNASLinkApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UNASLink;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03567BA25E4BC9DFB08C5A52 /* Build configuration list for PBXNativeTarget "UNASLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				236A8237E1C5A2FE127E788F /* Release */,
+				BD81C130768B0056DC19DF02 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16886E69A7DB5A50778E720A /* Build configuration list for PBXNativeTarget "UNASLinkFinderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C6275164F63D3813EA1CB9 /* Release */,
+				05BD323D9B122D178FD0130E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BEB41F8CA666341A8CB5CF9 /* Build configuration list for PBXProject "UNASLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1BBBD660F33BA2EACC843E /* Debug */,
+				99E7A9181D4B9916A14A1296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6ECCCDEDFCE01E28E3E61A16 /* Project object */;
+}

@@ -62,8 +62,8 @@ Sessions expire according to UniFi OS policy. A `401` response removes the old t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/blakecodes/Unifi-UNAS-Link-Copier-macOS.git
-   cd Unifi-UNAS-Link-Copier-macOS
+   git clone https://github.com/blakecodes/unifi-unas-link-copier-macos.git
+   cd unifi-unas-link-copier-macos
    ```
 
 2. Open `UNASLink.xcodeproj` in Xcode.
